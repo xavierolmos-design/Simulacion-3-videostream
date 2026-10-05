@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoStream</title>
+    <meta name="author" content="Xavier">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- Encabezado / Navbar -->
+    <header class="navbar">
+        <div class="nav-brand">
+            <span class="logo-icon">▶</span>
+            <h1 class="logo-text"><span class="logo-taco">Video</span><span class="logo-palace">Stream</span></h1>
+        </div>
+
+        <nav class="header-nav">
+            <a href="#" class="active">Inicio</a>
+            <a href="#">Explorar</a>
+            <a href="#">Mi lista</a>
+        </nav>
+
+        <div class="search-bar">
+            <input type="search" placeholder="Buscar">
+            <button type="button" aria-label="Buscar">🔍</button>
+        </div>
+
+        <div class="user-actions">
+            <span class="icon-btn">🔔</span>
+            <div class="user-avatar"></div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-container">
+        <!-- Columna Izquierda: Reproductor Principal e Información -->
+        <div class="left-column">
+            <section class="player-section">
+                <div class="video-wrapper">
+                    <video controls src=""></video>
+                </div>
+                
+                <h2 class="video-title">Lagos y montañas</h2>
+                
+                <div class="video-meta">
+                    <span class="views-date">95 mil visualizaciones • 10 abr 2024</span>
+                    
+                    <div class="action-buttons">
+                        <button class="btn-action">👍 4,8 K</button>
+                        <button class="btn-action">👎 120</button>
+                        <button class="btn-action">Compartir</button>
+                        <button class="btn-action">➕ Añadir a la cola</button>
+                    </div>
+                </div>
+
+                <div class="channel-info">
+                    <div class="channel-details">
+                        <div class="channel-avatar"></div>
+                        <div>
+                            <h4>VideoStream</h4>
+                            <p class="subscribers">1,2 M de suscriptores</p>
+                        </div>
+                    </div>
+                    <button class="btn-subscribe">Suscribirse</button>
+                </div>
+
+                <div class="video-description">
+                    <p>Un recorrido por los lagos más hermosos de la Patagonia, consejos, rutas y paisajes imperdibles.</p>
+                </div>
+            </section>
+
+            <!-- Sección Inferior (Solo visible/posicionada en pantallas grandes) -->
+            <section class="bottom-section">
+                <h3>Más videos</h3>
+                <div class="more-videos-grid">
+                    <article class="card-video-bottom">
+                        <div class="thumb-box"><span class="duration">4:15</span></div>
+                        <div class="card-info">
+                            <h5>Rutas de trekking</h5>
+                            <p>80 mil visualizaciones</p>
+                        </div>
+                    </article>
+
+                    <article class="card-video-bottom">
+                        <div class="thumb-box"><span class="duration">4:32</span></div>
+                        <div class="card-info">
+                            <h5>Lagos y montañas</h5>
+                            <p>95 mil visualizaciones</p>
+                        </div>
+                    </article>
+
+                    <article class="card-video-bottom">
+                        <div class="thumb-box"><span class="duration">3:50</span></div>
+                        <div class="card-info">
+                            <h5>Fauna patagónica</h5>
+                            <p>60 mil visualizaciones</p>
+                        </div>
+                    </article>
+
+                    <article class="card-video-bottom">
+                        <div class="thumb-box"><span class="duration">4:10</span></div>
+                        <div class="card-info">
+                            <h5>Consejos para viajar</h5>
+                            <p>110 mil visualizaciones</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- Columna Derecha: Cola y Recomendados -->
+        <aside class="right-column">
+            <!-- Siguiente en la cola -->
+            <section class="sidebar-section">
+                <div class="section-header">
+                    <h4>Siguiente en la cola</h4>
+                    <button class="btn-link">Limpiar cola</button>
+                </div>
+
+                <div class="sidebar-list">
+                    <article class="card-video-sidebar">
+                        <div class="thumb-box"><span class="duration">4:15</span></div>
+                        <div class="card-info">
+                            <h5>Explorando La Patagonia</h5>
+                            <p>VideoStream</p>
+                            <p>120 mil visualizaciones</p>
+                        </div>
+                        <button class="btn-remove">✕</button>
+                    </article>
+
+                    <article class="card-video-sidebar">
+                        <div class="thumb-box"><span class="duration">4:00</span></div>
+                        <div class="card-info">
+                            <h5>Comida callejera</h5>
+                            <p>VideoStream</p>
+                            <p>98 mil visualizaciones</p>
+                        </div>
+                        <button class="btn-remove">✕</button>
+                    </article>
+
+                    <article class="card-video-sidebar">
+                        <div class="thumb-box"><span class="duration">3:12</span></div>
+                        <div class="card-info">
+                            <h5>Ciudades del mundo</h5>
+                            <p>VideoStream</p>
+                            <p>210 mil visualizaciones</p>
+                        </div>
+                        <button class="btn-remove">✕</button>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Recomendados -->
+            <section class="sidebar-section">
+                <div class="section-header">
+                    <h4>Recomendados</h4>
+                </div>
+
+                <div class="sidebar-list">
+                    <article class="card-video-sidebar">
+                        <div class="thumb-box"><span class="duration">5:20</span></div>
+                        <div class="card-info">
+                            <h5>Rutas de trekking</h5>
+                            <p>VideoStream</p>
+                            <p>80 mil visualizaciones</p>
+                        </div>
+                        <button class="btn-add">➕</button>
+                    </article>
+
+                    <article class="card-video-sidebar">
+                        <div class="thumb-box"><span class="duration">3:50</span></div>
+                        <div class="card-info">
+                            <h5>Fauna patagónica</h5>
+                            <p>VideoStream</p>
+                            <p>60 mil visualizaciones</p>
+                        </div>
+                        <button class="btn-add">➕</button>
+                    </article>
+
+                    <article class="card-video-sidebar">
+                        <div class="thumb-box"><span class="duration">4:18</span></div>
+                        <div class="card-info">
+                            <h5>Atardeceres increíbles</h5>
+                            <p>VideoStream</p>
+                            <p>72 mil visualizaciones</p>
+                        </div>
+                        <button class="btn-add">➕</button>
+                    </article>
+                </div>
+            </section>
+        </aside>
+    </main>
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
